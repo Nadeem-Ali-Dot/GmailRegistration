@@ -1,0 +1,11 @@
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace GmailRegistration.ViewModel
+{
+    public class Setp9Model
+    {
+        [Required(ErrorMessage = "You must agree to the terms and privacy policy to proceed.")]
+        [Display(Name = "I agree to the Terms and Privacy Policy")]
+        public bool Agree { get; set; }
+    }
+}
